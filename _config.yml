@@ -1,0 +1,12 @@
+name: Ravindu Lakmina
+title: Cybersecurity Engineer
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+theme: minima
