@@ -1,0 +1,67 @@
+// assets/css/main.scss
+
+@import "minima";
+
+// Custom styles
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+.home {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-header {
+  background-color: #3498db;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.page-heading {
+  margin: 0;
+}
+
+.page-description {
+  margin-top: 5px;
+  font-size: 1.2em;
+}
+
+.about-me,
+.projects,
+.skills,
+.contact {
+  margin-bottom: 30px;
+}
+
+.projects h3 {
+  color: #3498db;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.contact a {
+  color: #3498db;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
