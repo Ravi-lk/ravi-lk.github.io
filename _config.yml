@@ -1,4 +1,4 @@
-name: Ravindu Lakmina
+name: Your Name
 title: Cybersecurity Engineer
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 
@@ -8,7 +8,11 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      
-      
 
-theme: jekyll-theme-minimal
+remote_theme: "mmistakes/minimal-mistakes"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: pretty
