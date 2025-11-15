@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu, Shield, Download } from 'lucide-react';
+import { Menu, Code, Download } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,8 +37,8 @@ const Header = () => {
     >
       <div className="container mx-auto flex h-20 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 font-headline text-2xl font-bold">
-          <Shield className="h-7 w-7 text-primary" />
-          <span>LakminaSecure</span>
+          <Code className="h-7 w-7 text-primary" />
+          <span>ravindu.dev</span>
         </Link>
 
         <nav className="hidden md:flex items-center gap-6">
