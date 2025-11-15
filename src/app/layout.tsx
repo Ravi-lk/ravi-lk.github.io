@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'LakminaSecure | Offensive Security Consultant',
+  title: 'ravindulakmina | Offensive Security Consultant',
   description: "Ravindu Lakmina's portfolio, showcasing expertise in offensive security, penetration testing, and cybersecurity research.",
 };
 

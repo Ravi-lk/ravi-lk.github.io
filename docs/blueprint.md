@@ -1,4 +1,4 @@
-# **App Name**: LakminaSecure
+# **App Name**: ravindulakmina
 
 ## Core Features:
 
