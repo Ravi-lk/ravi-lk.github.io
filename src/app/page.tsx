@@ -1,3 +1,4 @@
+
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import Hero from '@/components/sections/hero';
@@ -48,10 +49,10 @@ export default function Home() {
         <section id="contact" className="py-20 lg:py-32">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-5xl font-headline font-bold text-center mb-12 text-primary">
-              Get In Touch
+              Connect
             </h2>
             <p className="max-w-3xl mx-auto text-center text-muted-foreground mb-16 text-lg">
-              Have a project, a question, or just want to connect? Feel free to reach out. I'm always open to discussing new challenges and opportunities.
+              Have a project, a question, or just want to connect? Send an email or find me on social media.
             </p>
             <Contact />
           </div>
