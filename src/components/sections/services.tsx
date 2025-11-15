@@ -1,6 +1,6 @@
 
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
-import { ShieldCheck, Bug, Server, Code, Shield, Wifi, FileCode } from 'lucide-react';
+import { ShieldCheck, Bug, Server, Code, Shield, Wifi, FileCode, Library } from 'lucide-react';
 
 const servicesData = [
   {
@@ -38,6 +38,11 @@ const servicesData = [
     title: 'Application Security Consulting',
     description: 'Holistic security guidance throughout the software development lifecycle (SDLC) to build secure applications from the ground up.',
   },
+  {
+    icon: Library,
+    title: 'GRC Services',
+    description: 'Assisting organizations with Governance, Risk, and Compliance (GRC) to ensure adherence to industry standards and regulations.',
+  }
 ];
 
 const Services = () => {
