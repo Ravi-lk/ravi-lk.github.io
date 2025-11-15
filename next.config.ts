@@ -1,8 +1,13 @@
 
 import type {NextConfig} from 'next';
 
+const isProd = process.env.NODE_ENV === 'production';
+const repoName = 'ravindulakmina.github.io';
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  assetPrefix: isProd ? `/${repoName}/` : '',
+  basePath: isProd ? `/${repoName}` : '',
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -10,6 +15,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
