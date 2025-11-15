@@ -3,7 +3,7 @@ import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
 import Hero from '@/components/sections/hero';
 import Skills from '@/components/sections/skills';
-import Projects from '@/components/sections/projects';
+import Services from '@/components/sections/services';
 import Certificates from '@/components/sections/certificates';
 import Contact from '@/components/sections/contact';
 
@@ -24,15 +24,15 @@ export default function Home() {
             <Skills />
           </div>
         </section>
-        <section id="projects" className="py-20 lg:py-32 bg-card">
+        <section id="services" className="py-20 lg:py-32 bg-card">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-5xl font-headline font-bold text-center mb-12 text-primary">
-              Projects Showcase
+              Services Offered
             </h2>
             <p className="max-w-3xl mx-auto text-center text-muted-foreground mb-16 text-lg">
-              Here are some of the projects where I've applied my skills to solve complex security challenges and build resilient systems.
+              Leveraging expertise to provide comprehensive security solutions tailored to your needs.
             </p>
-            <Projects />
+            <Services />
           </div>
         </section>
         <section id="certificates" className="py-20 lg:py-32">
