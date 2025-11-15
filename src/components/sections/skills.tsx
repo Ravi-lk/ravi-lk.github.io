@@ -7,10 +7,6 @@ const skillsList = [
   'Network Pentesting',
   'Mobile Pentesting',
   'Social Engineering',
-  'Burp Suite',
-  'Nmap',
-  'Metasploit',
-  'Wireshark',
   'AWS Security',
   'Azure Security',
   'Container Security',
@@ -18,6 +14,10 @@ const skillsList = [
   'Bash Scripting',
   'JavaScript',
   'Go',
+  'Physical Security Testing',
+  'API Security Testing',
+  'ISO27001 and NIST',
+  'AI/ML Security',
 ];
 
 const Skills = () => {
