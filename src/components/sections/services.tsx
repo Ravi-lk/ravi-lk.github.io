@@ -1,17 +1,17 @@
 
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card';
-import { ShieldCheck, Bug, Server, Code } from 'lucide-react';
+import { ShieldCheck, Bug, Server, Code, Shield, Wifi, FileCode } from 'lucide-react';
 
 const servicesData = [
-  {
-    icon: ShieldCheck,
-    title: 'Vulnerability Assessment',
-    description: 'Comprehensive scans and analysis to identify security weaknesses in your applications and infrastructure before attackers do.',
-  },
   {
     icon: Bug,
     title: 'Penetration Testing',
     description: 'Simulating real-world attacks (web, network, mobile) to test the strength of your defenses and provide actionable remediation advice.',
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Vulnerability Assessment',
+    description: 'Comprehensive scans and analysis to identify security weaknesses in your applications and infrastructure before attackers do.',
   },
   {
     icon: Server,
@@ -21,7 +21,22 @@ const servicesData = [
   {
     icon: Code,
     title: 'Secure Code Review',
-    description: 'In-depth analysis of your source code to find security flaws and logic errors, ensuring a secure development lifecycle.',
+    description: 'In-depth analysis of source code to find security flaws. Includes Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST), and Software Composition Analysis (SCA).',
+  },
+  {
+    icon: Shield,
+    title: 'Security Consulting',
+    description: 'Providing expert advice to help you build and maintain a robust security program, from policy development to architectural reviews.',
+  },
+  {
+    icon: Wifi,
+    title: 'Wireless Security Audits',
+    description: 'Assessing your wireless networks for vulnerabilities and ensuring they are configured securely to prevent unauthorized access.',
+  },
+  {
+    icon: FileCode,
+    title: 'Application Security Consulting',
+    description: 'Holistic security guidance throughout the software development lifecycle (SDLC) to build secure applications from the ground up.',
   },
 ];
 
