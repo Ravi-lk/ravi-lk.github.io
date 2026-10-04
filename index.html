@@ -1,142 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="amber">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Ravindu</title>
-
-
-    <link rel="stylesheet" href="newstyle.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ravindu(1) — Ravindu Lakmina Munaweera</title>
+<meta name="description" content="Ravindu Lakmina Munaweera — security researcher and penetration tester. Credited finder of CVE-2026-102253 (iperf3), CVE-2026-85730 (smol-toml) and CVE-2026-10104.">
+<meta name="author" content="Ravindu Lakmina Munaweera">
+<meta property="og:title" content="ravindu(1) — Ravindu Lakmina Munaweera">
+<meta property="og:description" content="Security researcher & penetration tester. 3 published CVEs.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ravi-lk.github.io/">
+<meta name="theme-color" content="#120d05">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<script>
+  /* apply saved theme before paint */
+  try {
+    var q = new URLSearchParams(location.search).get('theme');
+    var t = q || localStorage.getItem('theme');
+    if (t) document.documentElement.dataset.theme = t;
+  } catch (e) {}
+</script>
 </head>
-
 <body>
+<a class="skip" href="#name">skip to content</a>
 
-    <canvas id="matrixCanvas"></canvas>
-    <!-- Matrix -->
-    <script src="/js/matrix.js"></script>
+<header class="manhead">
+  <span>RAVINDU(1)</span>
+  <span class="manhead-mid">Security Researcher's Manual</span>
+  <span>RAVINDU(1)</span>
+</header>
 
-    <header class="header">
-        <a href="#" class="logo">Ravindu Lakmina </a>
+<nav class="index" aria-label="Sections">
+  <a href="#name"><kbd>1</kbd>NAME</a>
+  <a href="#description"><kbd>2</kbd>DESCRIPTION</a>
+  <a href="#advisories"><kbd>3</kbd>ADVISORIES</a>
+  <a href="#options"><kbd>4</kbd>OPTIONS</a>
+  <a href="#history"><kbd>5</kbd>HISTORY</a>
+  <a href="#certifications"><kbd>6</kbd>CERTIFICATIONS</a>
+  <a href="#education"><kbd>7</kbd>EDUCATION</a>
+  <a href="#bugs"><kbd>8</kbd>REPORTING BUGS</a>
+  <span class="theme" role="group" aria-label="Theme">
+    theme:
+    <button type="button" data-set-theme="amber">amber</button>
+    <button type="button" data-set-theme="green">green</button>
+    <button type="button" data-set-theme="paper">paper</button>
+  </span>
+</nav>
 
-        <nav class="navbar">
-            <a href="#home" style="--i:1;" class="active">Home</a>
-            <!-- <a href="#about" style="--i:2;">About</a> -->
-            <a href="#skill" style="--i:3;">Skills</a>
-            <a href="#certs" style="--i:4;">Certifications</a>
-            <a href="#contact" style="--i:5;">Contact</a>
-        </nav>
-    </header>
+<main class="page">
 
-    <section id="home" class="home">
+  <p class="prompt" aria-hidden="true"><span class="ps1">ravindu@lk:~$</span> man ravindu<span class="cursor"></span></p>
 
-        <div class="home-content" data-scroll data-scroll-speed="-5">
-            <h3 class="mu">Hello, It's me</h3>
-            <h1>Ravindu Lakmina</h1>
-            <h3>And I'm a <span class="pro-text">
-                    <script>
-                        var typed = new Typed(".pro-text", {
-                            strings: [
-                                "Hacker",
-                                "Cybersecurity Engineer",
-                                "Penetration Tester"
-                            ],
-                            typeSpeed: 100,
-                            backSpeed: 100,
-                            backDelay: 1000,
-                            loop: true
-                        });
-                    </script>
-                </span></h3>
+  <section id="name">
+    <h2>NAME</h2>
+    <div class="body">
+      <h1 class="big">Ravindu Lakmina<br>Munaweera</h1>
+      <p><b>ravindu</b> — threat operations lead, red teamer, security researcher; reads other people's source code until something breaks</p>
+    </div>
+  </section>
 
-            <p> &emsp; &emsp;Seasoned cybersecurity professional with a passion for safeguarding data and systems. Blend
-                of technical
-                proficiency and proactive mindset allows me to excel in addressing complex challenges. Commitment to
-                continuous learning yields innovative security solutions. Expertise in penetration testing, threat
-                intelligence analysis, and cloud security and Ethical Hacking.<br> <br>
-                &emsp; &emsp;
-            </p>
+  <section id="synopsis">
+    <h2>SYNOPSIS</h2>
+    <div class="body">
+      <p class="synopsis"><b>ravindu</b> [<b>--hunt</b> <u>exposure</u>] [<b>--red-team</b> <u>org</u>] [<b>--pentest</b> <u>scope</u>] [<b>--review</b> <u>repo</u> ...] [<b>--disclose</b> <u>cna</u>] [<b>--mentor</b> <u>team</u>]</p>
+    </div>
+  </section>
 
-            <div class="home-sci">
-                <a href="https://github.com/Ravi-lk" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="https://www.linkedin.com/in/ravindulakmina" target="_blank"><i class='bx bxl-linkedin'></i></a>
-                <!-- <a href="https://wa.me/dsdas" target="_blank"><i class='bx bxl-whatsapp'></i></a> -->
-                <!-- <a href="https://www.instagram.com/ravindu/" target="_blank"><i class='bx bxl-instagram'></i></a> -->
-            </div>
-            <a href="" class="btn-box" download="ravindu CV/Resume">Download CV</a>
-        </div>
+  <section id="description">
+    <h2>DESCRIPTION</h2>
+    <div class="body desc">
+      <div class="desc-text">
+        <p><b>ravindu</b> breaks things so they can be fixed before somebody else breaks them for real.</p>
+        <p>Currently leads threat operations: finding exposed services across the internet before attackers do, attributing them to the right owner, and turning raw findings into advisories that customers and brokers can actually act on.</p>
+        <p>Before that, a stretch in offensive security &mdash; red team engagements mapped to MITRE ATT&amp;CK, Active Directory attack paths, web and API testing for Nordic enterprises and a global bank, and leading a team of junior testers. Earlier still, the defensive side: running EDR/XDR, firewalls and identity controls, and writing the policies behind them.</p>
+        <p>Off hours: auditing open-source software. Parsers, network daemons, WordPress plugins &mdash; anything that takes untrusted input and trusts it a little too much. Findings go to the maintainer first, then to a CNA, then here. See <a href="#advisories">ADVISORIES</a>.</p>
+        <p>In IT since 2019, in security since 2022. Prefers plain text, short reports, and proofs of concept that reproduce on the first try.</p>
+      </div>
+      <figure class="portrait">
+        <div class="portrait-img" role="img" aria-label="Portrait of Ravindu Lakmina Munaweera, rendered as a 1-bit dithered image"></div>
+        <figcaption>fig. 1 &mdash; subject, 1-bit, bayer 8&times;8</figcaption>
+      </figure>
+    </div>
+  </section>
 
-        <div class="home-img">
-            <div class="glowing-circle">
-                <span></span>
-                <span></span>
-                <div class="image">
-                    <img src="assets/img/me.png" alt="">
-                </div>
-            </div>
-        </div>
+  <section id="advisories">
+    <h2>ADVISORIES</h2>
+    <div class="body">
+      <p class="cmd"><span class="ps1">$</span> cve-search --credit finder="Ravindu Lakmina Munaweera" --sort published</p>
+      <p class="dim">3 records &middot; 2 high &middot; 1 medium &middot; credited as finder</p>
 
-    </section>
+      <article class="adv">
+        <header class="adv-head">
+          <a class="adv-id" href="https://www.cve.org/CVERecord?id=CVE-2026-102253" target="_blank" rel="noopener">CVE-2026-102253</a>
+          <span class="adv-score"><span class="bar" aria-hidden="true">[#################...]</span> <span class="sev sev-high">HIGH 8.7</span></span>
+        </header>
+        <p class="adv-title">iperf3 &lt; 3.22 &mdash; UDP receive worker infinite loop</p>
+        <dl class="adv-meta">
+          <dt>product</dt><dd>esnet/iperf3, 3.14 through 3.21</dd>
+          <dt>class</dt><dd>CWE-835 loop with unreachable exit &middot; remote DoS, no auth</dd>
+          <dt>cvss</dt><dd class="vec">CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N</dd>
+          <dt>cna</dt><dd>VulnCheck</dd>
+          <dt>published</dt><dd>2026-09-29</dd>
+        </dl>
+        <p class="adv-desc">One crafted parameter message on the control channel, then a single 16-byte UDP datagram. The server's per-stream receive thread spins at ~100% CPU and stops listening to the control channel entirely &mdash; only <code>SIGKILL</code> gets it back.</p>
+        <p class="adv-links">
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-102253" target="_blank" rel="noopener">cve.org</a>
+          <a href="https://www.vulncheck.com/advisories/iperf3-udp-receive-worker-infinite-loop-dos" target="_blank" rel="noopener">vulncheck advisory</a>
+          <a href="https://github.com/esnet/iperf/releases/tag/3.22" target="_blank" rel="noopener">fix: 3.22</a>
+        </p>
+      </article>
 
+      <article class="adv">
+        <header class="adv-head">
+          <a class="adv-id" href="https://www.cve.org/CVERecord?id=CVE-2026-85730" target="_blank" rel="noopener">CVE-2026-85730</a>
+          <span class="adv-score"><span class="bar" aria-hidden="true">[################....]</span> <span class="sev sev-high">HIGH 8.2</span></span>
+        </header>
+        <p class="adv-title">smol-toml &lt; 1.7.1 &mdash; parser hangs forever on a trailing comment</p>
+        <dl class="adv-meta">
+          <dt>product</dt><dd>squirrelchat/smol-toml (npm), before 1.7.1</dd>
+          <dt>class</dt><dd>CWE-835, CWE-606 &middot; DoS via attacker-controlled TOML</dd>
+          <dt>cvss</dt><dd class="vec">CVSS:4.0/AV:N/AC:L/AT:P/PR:N/UI:N/VC:N/VI:N/VA:H/SC:N/SI:N/SA:N</dd>
+          <dt>cna</dt><dd>GitHub &middot; GHSA-7w5x-hrqm-74c2</dd>
+          <dt>published</dt><dd>2026-09-04</dd>
+        </dl>
+        <p class="adv-desc">A value inside an array or inline table, followed by a comment with no trailing newline. <code>skipUntil()</code> gets <code>-1</code> back from <code>indexOfNewline()</code> at end of input and rewinds the cursor to the start of the string. <code>parse()</code> never returns, and the Node.js event loop goes with it.</p>
+        <p class="adv-links">
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-85730" target="_blank" rel="noopener">cve.org</a>
+          <a href="https://github.com/squirrelchat/smol-toml/security/advisories/GHSA-7w5x-hrqm-74c2" target="_blank" rel="noopener">github advisory</a>
+          <a href="https://github.com/squirrelchat/smol-toml/commit/30f5c367d946b695f379b5d4f0946b2f0a0a8c2f" target="_blank" rel="noopener">fix commit</a>
+          <a href="https://medium.com/@ravindu.lakmina1/seven-bytes-that-freeze-a-node-js-server-forever-the-story-of-cve-2026-85730-3213328b38f0" target="_blank" rel="noopener">write-up</a>
+        </p>
+      </article>
 
-    <section id="skill" class="skill">
-        <h2>Skills</h2>
-        <div class="skills-buttons">
-            <button>Network Security</button>
-            <button>Penetration Testing</button>
-            <button>Incident Response</button>
-            <button>Cloud Security</button>
-            <button>Ethical Hacking</button>
-            <button>OSINT</button>
-            <button>Linux</button>
-            <button>Python</button>
-            <button>Threat Hunting</button>
-            <button>Social Engineering</button>
-            <button>Security Audits</button>
-            <button>Malware Analysis</button>
-        </div>
-    </section>
-    
-   
-    <section id="certs" class="certifications">
-        <h2>Certifications</h2>
-        <div class="certs-container">
-            <div class="cert-card">Certified Ethical Hacker Master v12 | CEH Master</div>
-            <div class="cert-card">Certified in Cybersecurity - ISC2</div>
-            <div class="cert-card">Cybereason Certified Threat Hunter</div>
-            <div class="cert-card">Cyber Incident Response Specialization</div>
-            <div class="cert-card">Google IT Support Professional Certificate</div>
-            <div class="cert-card">Ransomware Uncovered Specialist Certificate - ICTTF</div>
-            <div class="cert-card">ICSI | CNSS Certified Network Security Specialist</div>
-        </div>
-    </section>
-    
+      <article class="adv">
+        <header class="adv-head">
+          <a class="adv-id" href="https://www.cve.org/CVERecord?id=CVE-2026-10104" target="_blank" rel="noopener">CVE-2026-10104</a>
+          <span class="adv-score"><span class="bar" aria-hidden="true">[#########...........]</span> <span class="sev sev-med">MEDIUM 4.4</span></span>
+        </header>
+        <p class="adv-title">Product Video Gallery for WooCommerce &le; 1.5.1.8 &mdash; stored XSS</p>
+        <dl class="adv-meta">
+          <dt>product</dt><dd>WordPress plugin by nikhilgadhiya, up to and including 1.5.1.8</dd>
+          <dt>class</dt><dd>CWE-79 stored cross-site scripting &middot; shop manager+</dd>
+          <dt>cvss</dt><dd class="vec">CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:C/C:L/I:L/A:N</dd>
+          <dt>cna</dt><dd>Wordfence</dd>
+          <dt>published</dt><dd>2026-07-02</dd>
+        </dl>
+        <p class="adv-desc">The <code>custom_thumbnail</code> parameter is stored without sanitization and rendered without escaping, so a shop manager account can plant script that runs for every visitor of the product page.</p>
+        <p class="adv-links">
+          <a href="https://www.cve.org/CVERecord?id=CVE-2026-10104" target="_blank" rel="noopener">cve.org</a>
+          <a href="https://www.wordfence.com/threat-intel/vulnerabilities/id/f61885bc-b7da-42b8-a0d3-ba5d7d19b536" target="_blank" rel="noopener">wordfence</a>
+        </p>
+      </article>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <div class="contact-container">
-            <div class="contact-item">
-                <i class='bx bxs-envelope'></i>
-                <p>Email: <a href="mailto:ravindu@example.com">ravindu.lakmina1@gmail.com</a></p>
-            </div>
-            <div class="contact-item">
-                <i class='bx bxl-linkedin'></i>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/ravindulakmina/" target="_blank">ravindulakmina</a></p>
-            </div>
-        </div>
-    </section>
-    
+  <section id="options">
+    <h2>OPTIONS</h2>
+    <div class="body">
+      <dl class="opts">
+        <dt><b>-t</b>, <b>--threat-ops</b></dt>
+        <dd>Exposure validation, attack surface monitoring, threat research and customer security advisories (Shodan, Censys, Nuclei).</dd>
+        <dt><b>-r</b>, <b>--red-team</b></dt>
+        <dd>Adversary simulation aligned with MITRE ATT&amp;CK, threat emulation, internal infrastructure, Active Directory assessments (BloodHound, Mimikatz, NetExec).</dd>
+        <dt><b>-p</b>, <b>--pentest</b></dt>
+        <dd>Web application, network and API penetration testing (Burp Suite Pro, Acunetix, Qualys, Tenable Nessus).</dd>
+        <dt><b>-s</b>, <b>--source-review</b></dt>
+        <dd>Static and dynamic source code security assessments (DAST, SAST, IAST) with Semgrep, SonarQube, Veracode; secure coding workshops.</dd>
+        <dt><b>-c</b>, <b>--cloud-devsecops</b></dt>
+        <dd>Cloud security best practices (AWS, GCP), container environments, and DevSecOps pipeline integration.</dd>
+        <dt><b>-e</b>, <b>--edr-xdr</b></dt>
+        <dd>EDR/XDR deployment, tuning and detection engineering (CrowdStrike, Cybereason, Sophos, Microsoft Defender).</dd>
+        <dt><b>-o</b>, <b>--osint</b></dt>
+        <dd>Asset attribution, WHOIS, DNS reconnaissance, TLS fingerprinting, and social engineering assessments.</dd>
+        <dt><b>-g</b>, <b>--grc-compliance</b></dt>
+        <dd>Security policy development, architecture review, and compliance auditing aligned with ISO 27001, NIST, and GDPR frameworks.</dd>
+      </dl>
+      <p class="dim">ENVIRONMENT: Linux, Python, Bash, PowerShell, Active Directory, DevSecOps.</p>
+    </div>
+  </section>
 
+  <section id="history">
+    <h2>HISTORY</h2>
+    <div class="body">
+      <ul class="hist">
+        <li>
+          <span class="when">May 2026&ndash;present</span>
+          <div>
+            <b>Threat Operations Engineer (CTRL) / Lead</b> &mdash; Confidential
+            <ul>
+              <li>Validate and escalate emerging threats and exposures using Shodan, Censys, and Nuclei.</li>
+              <li>Conduct asset verification and attribution via OSINT (WHOIS, DNS, TLS fingerprinting).</li>
+              <li>Author actionable customer security advisories and remediation guidance for clients and brokers.</li>
+              <li>Serve as technical escalation point to improve detection logic and threat monitoring workflows.</li>
+              <li>Partner with a world-leading cyber insurance provider in the UK on threat intelligence research.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="when">Oct 2024&ndash;Apr 2026</span>
+          <div>
+            <b>Senior Offensive Security Engineer / Red Team Engineer</b> &mdash; OREL IT
+            <ul>
+              <li>Led and mentored a team of junior security professionals in offensive security tactics and methodologies.</li>
+              <li>Executed Red teaming, penetration testing, and threat emulation engagements aligned with MITRE ATT&amp;CK.</li>
+              <li>Conducted Active Directory pentests and internal infrastructure assessments (BloodHound, Mimikatz, NetExec).</li>
+              <li>Managed end-to-end client engagements from scoping to executive reporting; delivered OWASP Top 10 workshops.</li>
+              <li>Performed source code analysis to identify insecure patterns, logic flaws, and architectural weaknesses.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="when">Apr 2023&ndash;Oct 2024</span>
+          <div>
+            <b>Cyber Security Engineer</b> &mdash; eBuilder Security
+            <ul>
+              <li>Conducted web and API pentests for high-profile clients, including Nordic enterprises and a top global bank.</li>
+              <li>Executed automated and manual DAST, SAST, and IAST assessments (Acunetix, Nessus, Veracode, Semgrep, SonarQube).</li>
+              <li>Administered and optimized enterprise EDR/XDR platforms (CrowdStrike, Cybereason, Sophos, Microsoft Defender).</li>
+              <li>Conducted firewall configuration reviews (Fortinet, Cisco Meraki) and assisted with ISO 27001, NIST, and GDPR compliance audits.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="when">2022&ndash;present</span>
+          <div>
+            <b>Independent Security Consultant &amp; Researcher</b>
+            <ul>
+              <li>Deliver black-box and gray-box penetration tests across web applications, networks, and APIs.</li>
+              <li>Strategic advisory on defense-in-depth roadmaps, security architecture, and vulnerability disclosure.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <span class="when">Jan 2019&ndash;Jan 2020</span>
+          <div>
+            <b>IT Support Officer</b> &mdash; Ocean Link Enterprises
+            <ul>
+              <li>Managed Cloudflare WAF, enforced endpoint baseline security, and supported IT systems infrastructure.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Ravindu Lakmina. All rights reserved.</p>
-        </div>
-    </footer>
+  <section id="certifications">
+    <h2>CERTIFICATIONS</h2>
+    <div class="body">
+      <table class="certs">
+        <tbody>
+          <tr><td>EC-Council</td><td>Certified Ethical Hacker v12 - Practical (CEH Practical)</td></tr>
+          <tr><td>EC-Council</td><td>Certified Ethical Hacker v12 (CEH)</td></tr>
+          <tr><td>Offsec</td><td>Offensive Security Wireless Professional (OSWP)</td></tr>
+          <tr><td>CyberWarFare Labs</td><td>Certified Red Team Analyst (CRTA)</td></tr>
+          <tr><td>ISC2</td><td>Certified in Cybersecurity (CC)</td></tr>
+          <tr><td>Cybereason</td><td>Cybereason Certified Threat Analyst (CCTA)</td></tr>
+          <tr><td>Cybereason</td><td>Cybereason Certified Threat Hunter (CCTH)</td></tr>
+          <tr><td>Infosec</td><td>Cyber Incident Response Specialization</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>EDUCATION</h2>
+    <div class="body">
+      <ul class="hist">
+        <li>
+          <span class="when">2020&ndash;2024</span>
+          <div>
+            <b>BSc (Hons) in Cybersecurity</b> &mdash; SLTC Research University, Sri Lanka
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="bugs">
+    <h2>REPORTING BUGS</h2>
+    <div class="body">
+      <p>Found a bug in your product and want someone to find the rest? Need a pentest, or a second pair of eyes on a codebase?</p>
+      <p class="mail">mail <a href="mailto:ravindu.lakmina1@gmail.com">ravindu.lakmina1@gmail.com</a></p>
+      <p class="dim">Coordinated disclosure only. Please include enough detail to reproduce.</p>
+    </div>
+  </section>
+
+  <section id="see-also">
+    <h2>SEE ALSO</h2>
+    <div class="body">
+      <p class="seealso">
+        <a href="https://github.com/Ravi-lk" target="_blank" rel="noopener"><b>github</b>(1)</a>,
+        <a href="https://www.linkedin.com/in/ravindulakmina/" target="_blank" rel="noopener"><b>linkedin</b>(1)</a>,
+        <a href="https://medium.com/@ravindu.lakmina1" target="_blank" rel="noopener"><b>medium</b>(1)</a>,
+        <a href="https://www.cve.org/CVERecord?id=CVE-2026-102253" target="_blank" rel="noopener"><b>cve</b>(7)</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="manfoot">
+  <span>ravi-lk.github.io</span>
+  <span>2026-10-04</span>
+  <span>RAVINDU(1)</span>
+</footer>
+
+<div class="status" id="status" aria-hidden="true">
+  <span class="status-text" id="status-text">Manual page ravindu(1) line 1</span>
+  <span class="status-hint">press <kbd>h</kbd> for help</span>
+</div>
+
+<div class="help" id="help" role="dialog" aria-modal="true" aria-labelledby="help-title" hidden>
+  <pre id="help-title">
+                   SUMMARY OF LESS COMMANDS
+
+  j  k          scroll one line down / up
+  space  b      scroll one page down / up
+  g  G          go to top / bottom
+  1 &ndash; 8         jump to section
+  t             cycle theme (amber, green, paper)
+  h  ?          show this help
+  esc           close this help
+  </pre>
+</div>
+
+<script src="assets/js/site.js" defer></script>
 </body>
-
 </html>
