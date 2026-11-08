@@ -1,7 +1,6 @@
-# ravindu(1) — Portfolio
+# Ravindu Lakmina Munaweera
 
-Personal portfolio and security research manual page of **Ravindu Lakmina Munaweera**.
+Personal site of Ravindu Lakmina Munaweera, security researcher and penetration tester.
 
 - **Live URL:** [https://ravi-lk.github.io/](https://ravi-lk.github.io/)
-- **Theme:** Retro cybersecurity terminal / Unix manual page (`man ravindu`).
-- **Stack:** Plain HTML5, CSS3, minimal vanilla JS (zero build dependencies, native GitHub Pages hosting).
+- **Stack:** Plain HTML and CSS, with no build step, hosted on GitHub Pages.
